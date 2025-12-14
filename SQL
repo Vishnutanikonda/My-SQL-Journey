@@ -6,7 +6,7 @@ CREATE TABLE movies (
 	language varchar(50) DEFAULT 'Telugu',
 	duration_minutes INT NOT NULL,
 	rating decimal(3,1),
-	director_id INT,
+	director_id INT
 	FOREIGN KEY (directors_id) REFERENCES Directors(director_id)
  ); 
 
