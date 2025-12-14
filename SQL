@@ -1,0 +1,12 @@
+CREATE TABLE movies (
+	movie_id INT PRIMARY KEY AUTO_INCREMENT,
+	title VARCHAR(255) NOT NULL,
+	release_year YEAR NOT NULL,
+	genre varchar(100) NOT NULL,
+	language varchar(50) DEFAULT 'Telugu',
+	duration_minutes INT NOT NULL,
+	rating decimal(3,1),
+	director_id INT,
+	FOREIGN KEY (directors_id) REFERENCES Directors(director_id)
+ ); 
+
