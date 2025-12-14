@@ -10,3 +10,10 @@ CREATE TABLE movies (
 	FOREIGN KEY (directors_id) REFERENCES Directors(director_id)
  ); 
 
+select*from movies;
+
+INSERT INTO movies (title, release_year, genre, language, duration_minutes, rating)values
+('patan',  2012, 'Action', 'Hindi', 140, 9.0);
+
+INSERT INTO movies (title, release_year, genre, language, duration_minutes, rating)values
+('joe',  2012, 'romance', 'malayalam', 140, 9.0);
